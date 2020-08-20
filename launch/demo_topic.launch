@@ -1,0 +1,4 @@
+<launch>
+	<node name='publisher_node' pkg='beginner_tutorials' type='talker' args='0' output='screen'/>
+	<node name='subscriber_node' pkg='beginner_tutorials' type='listener' args='0' output='screen'/>
+</launch>

@@ -1,0 +1,26 @@
+<launch>
+    <node name='publisher_node0' pkg='beginner_tutorials' type='talker' args='0' output='screen'/>
+    <node name='subscriber_node0' pkg='beginner_tutorials' type='listener' args='0' output='screen'/>
+    <node name='publisher_node1' pkg='beginner_tutorials' type='talker' args='1' output='screen'/>
+    <node name='subscriber_node1' pkg='beginner_tutorials' type='listener' args='1' output='screen'/>
+    <node name='publisher_node2' pkg='beginner_tutorials' type='talker' args='2' output='screen'/>
+    <node name='subscriber_node2' pkg='beginner_tutorials' type='listener' args='2' output='screen'/>
+    <node name='publisher_node3' pkg='beginner_tutorials' type='talker' args='3' output='screen'/>
+    <node name='subscriber_node3' pkg='beginner_tutorials' type='listener' args='3' output='screen'/>
+    <node name='publisher_node4' pkg='beginner_tutorials' type='talker' args='4' output='screen'/>
+    <node name='subscriber_node4' pkg='beginner_tutorials' type='listener' args='4' output='screen'/>
+    <node name='publisher_node5' pkg='beginner_tutorials' type='talker' args='5' output='screen'/>
+    <node name='subscriber_node5' pkg='beginner_tutorials' type='listener' args='5' output='screen'/>
+    <node name='publisher_node6' pkg='beginner_tutorials' type='talker' args='6' output='screen'/>
+    <node name='subscriber_node6' pkg='beginner_tutorials' type='listener' args='6' output='screen'/>
+    <node name='publisher_node7' pkg='beginner_tutorials' type='talker' args='7' output='screen'/>
+    <node name='subscriber_node7' pkg='beginner_tutorials' type='listener' args='7' output='screen'/>
+    <node name='publisher_node8' pkg='beginner_tutorials' type='talker' args='8' output='screen'/>
+    <node name='subscriber_node8' pkg='beginner_tutorials' type='listener' args='8' output='screen'/>
+    <node name='publisher_node9' pkg='beginner_tutorials' type='talker' args='9' output='screen'/>
+    <node name='subscriber_node9' pkg='beginner_tutorials' type='listener' args='9' output='screen'/>
+    <node name='publisher_nodeX' pkg='beginner_tutorials' type='talker' args='X' output='screen'/>
+    <node name='subscriber_nodeX' pkg='beginner_tutorials' type='listener' args='X' output='screen'/>
+    <node name='publisher_nodeY' pkg='beginner_tutorials' type='talker' args='Y' output='screen'/>
+    <node name='subscriber_nodeY' pkg='beginner_tutorials' type='listener' args='Y' output='screen'/>
+</launch>
