@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>beginner_tutorials</name>
+  <name>ros_thesis_exp</name>
   <version>0.0.0</version>
-  <description>The beginner_tutorials package</description>
+  <description>The ros_thesis_exp package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
   <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
-  <maintainer email="stoplight@todo.todo">stoplight</maintainer>
+  <maintainer email="abiyleoul3@gmail.com">stoplight</maintainer>
 
 
   <!-- One license tag required, multiple allowed, one license per tag -->

@@ -38,6 +38,12 @@
 
 using namespace std::chrono;
 
+int fib(int n)
+{
+  if(n == 1 || n == 2)
+    return 1;
+  return fib(n-1) + fib(n-2);
+}
 /**
  * This tutorial demonstrates simple sending of messages over the ROS system.
  */
@@ -108,9 +114,9 @@ int main(int argc, char **argv)
      */
 // %Tag(FILL_MESSAGE)%
     std_msgs::Int64MultiArray msg;
+    fib(10);
     for(int i=0; i<1000; ++i)
     {
-      ROS_INFO("%d", i);
       msg.data.push_back(i);
     }
     /*std::stringstream ss;
@@ -120,7 +126,6 @@ int main(int argc, char **argv)
 // %EndTag(FILL_MESSAGE)%
 
 // %Tag(ROSCONSOLE)%
-    ROS_INFO("%d", argc);
 
 // %EndTag(ROSCONSOLE)%
 
@@ -143,7 +148,7 @@ int main(int argc, char **argv)
 // %EndTag(RATE_SLEEP)%
     ++count;
 
-    if(count >= 100)
+    if(count >= 1000000)
 	    break;
     
   }

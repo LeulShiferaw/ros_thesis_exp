@@ -36,8 +36,8 @@
 void chatterCallback(const std_msgs::Int64MultiArray& msg)
 {
   ROS_INFO("%s", "callbacks\n");
-  for(int i = 0; i < msg.data.size(); ++i)
-    ROS_INFO("%ld", msg.data[i]);
+ // for(int i = 0; i < msg.data.size(); ++i)
+    //ROS_INFO("%ld", msg.data[i]);
 }
 // %EndTag(CALLBACK)%
 
@@ -80,8 +80,14 @@ int main(int argc, char **argv)
    */
 // %Tag(SUBSCRIBER)%
   std::string tpc = "topic" + std::string(argv[1]);
-  ROS_INFO("%s", tpc);
-  ros::Subscriber sub = n.subscribe(tpc, 1000, chatterCallback);
+  char *temp = new char[tpc.size()+2];
+  int i;
+  for(i = 0; i<tpc.size(); ++i)
+    temp[i] = tpc[i];
+  temp[i] = '\0';
+  ROS_INFO("%s", temp);
+  ros::Subscriber sub = n.subscribe(temp, 1000, chatterCallback);
+  delete[]temp;
 // %EndTag(SUBSCRIBER)%
 
   /**
